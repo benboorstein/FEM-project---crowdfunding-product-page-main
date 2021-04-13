@@ -1,8 +1,4 @@
-<!-- LEFT OFF HERE - next steps:
-  - Research, as Robert suggested, "CSS modal" and "MDN modal" to make sure I get it and my modals HTML is correct/workable. And if I need to, email him with questions. 
-  - Then either edit HTML, or start CSS, or start JS.
-  - R that for CSS I'll have to use absolute positioning for all modals, since they appear on top.
--->
+<!-- NOTE: This project was left unfinished, just in the interest of time. If you pick back up on it, know that the HTML is done for now (will probably have to edit a bit as I go). -->
 
 
 
@@ -61,7 +57,8 @@
         <h1>Mastercraft Bamboo Monitor Riser</h1> <!-- For accessibility reasons, just have one h1 per page. -->
         <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div>
-          <a href="#" target="_blank"><button type="button">Back this project</button></a>
+          <!--<a href="#" target="_blank">--><button type="button" id="back-proj-btn">Back this project</button><!--</a>-->
+          <!-- Note that the above commenting out is because, temporarily (just to practice the modal stuff), I'm treating this button as the one that triggers the modal, even though in reality it wouldn't be. -->
           <img class="bookmark-icon" src="./assets/img/icon-bookmark.svg" alt="bookmark-icon">
         </div>
       </section>
@@ -130,13 +127,15 @@
 
       <!-- "Thanks..." modal -->
       <section class="thank-you-modal is-hidden">
-        <img class="icon-check" src="./assets/img/icon-check.svg" alt="">
-        <p>Thanks for your support!</p>
-        <p>
-          Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-          an email once our campaign is completed.
-        </p>
-        <a href="#" target="_blank"><button type="button">Got it!</button></a>
+        <div class="modal-content"> <!-- haven't added this to other modal yet -->
+          <img class="icon-check" src="./assets/img/icon-check.svg" alt="">
+          <p>Thanks for your support!</p>
+          <p>
+            Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+            an email once our campaign is completed.
+          </p>
+          <button type="button" id="got-it-btn">Got it!</button>
+        </div>
       </section>
 
       <!-- "Back this project" modal -->

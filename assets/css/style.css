@@ -17,9 +17,9 @@ html, body {
     padding: 0;
 }
 
-
-        /*font-family: 'Commissioner', sans-serif;*/
-
+body {
+    font-family: 'Commissioner', sans-serif;
+}
 
 /****************************************
 header
@@ -44,6 +44,59 @@ footer
     color: hsl(228, 45%, 44%); /*hsl(hue, saturation, lightness)*/
 }
 
+/****************************************
+modals
+****************************************/
+
+/********** "Thanks..." modal **********/
+
+/* Modal positioning and background */
+.thank-you-modal {
+    display: none; /* hidden by default */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    overflow: auto; /* enable scroll if needed */
+    background-color: black; /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* black w/ opacity */
+}
+
+/* Modal content/box */
+.modal-content {
+    text-align: center;
+    background-color: white;
+    margin: 32% auto; /* 36% from the top and centered */
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.thank-you-modal p:nth-of-type(1) {
+    font-weight: 700;
+}
+
+/* Modal close button */
+#got-it-btn {
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    font-weight: 500;
+    border: none;
+    font-family: 'Commissioner', sans-serif;
+    padding: 15px 30px;
+    border-radius: 40px;
+    margin-bottom: 17px;
+}
+
+#got-it-btn:hover,
+#got-it-btn:focus {
+    background-color: hsl(176, 72%, 28%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /************************************************************
 ********** For Desktop/Wide Viewport **********
 ************************************************************/
@@ -62,6 +115,10 @@ footer
 
     /****************************************
     footer
+    ****************************************/
+
+    /****************************************
+    modals
     ****************************************/
 
 
